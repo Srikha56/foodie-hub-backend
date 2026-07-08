@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/restaurants", (req, res) => {
-  const filePath = path.join(__dirname, "../db.json");
+  const filePath = path.join(__dirname, "db.json");
 
   fs.readFile(filePath, "utf8", (err, data) => {
     if (err) {
@@ -33,7 +33,7 @@ app.get("/restaurants", (req, res) => {
 app.post("/restaurants", (req, res) => {
   console.log("POST HIT");
 
-  const filePath = path.join(__dirname, "../db.json");
+  const filePath = path.join(__dirname, "db.json");
 
   fs.readFile(filePath, "utf8", (err, data) => {
     const jsonData = JSON.parse(data);
@@ -47,7 +47,7 @@ app.post("/restaurants", (req, res) => {
 });
   
 app.get("/customers", (req, res) => {
-  const filePath = path.join(__dirname, "../db.json");
+  const filePath = path.join(__dirname, "db.json");
 
   fs.readFile(filePath, "utf8", (err, data) => {
     if (err) {
@@ -69,7 +69,7 @@ app.get("/customers", (req, res) => {
   });
 });
 app.post("/customers", (req, res) => {
-  const filePath = path.join(__dirname, "../db.json");
+  const filePath = path.join(__dirname, "db.json");
 
   fs.readFile(filePath, "utf8", (err, data) => {
     if (err) {
@@ -92,7 +92,7 @@ app.post("/customers", (req, res) => {
   });
 });
 app.get("/foods", (req, res) => {
-  const filePath = path.join(__dirname, "../db.json");
+  const filePath = path.join(__dirname, "db.json");
 
   fs.readFile(filePath, "utf8", (err, data) => {
     if (err) {
@@ -104,7 +104,7 @@ app.get("/foods", (req, res) => {
   });
 });
 app.post("/foods", (req, res) => {
-  const filePath = path.join(__dirname, "../db.json");
+  const filePath = path.join(__dirname, "db.json");
 
   fs.readFile(filePath, "utf8", (err, data) => {
     if (err) {
@@ -126,7 +126,7 @@ app.post("/foods", (req, res) => {
 });
 
 app.put("/foods/:id", (req, res) => {
-  const filePath = path.join(__dirname, "../db.json");
+  const filePath = path.join(__dirname, "db.json");
 
   fs.readFile(filePath, "utf8", (err, data) => {
     if (err) {
@@ -155,7 +155,7 @@ app.put("/foods/:id", (req, res) => {
   });
 });
 app.get("/orders", (req, res) => {
-  const filePath = path.join(__dirname, "../db.json");
+  const filePath = path.join(__dirname, "db.json");
 
   fs.readFile(filePath, "utf8", (err, data) => {
     if (err) {
@@ -167,7 +167,7 @@ app.get("/orders", (req, res) => {
   });
 });
 app.post("/orders", (req, res) => {
-  const filePath = path.join(__dirname, "../db.json");
+  const filePath = path.join(__dirname, "db.json");
 
   fs.readFile(filePath, "utf8", (err, data) => {
     const jsonData = JSON.parse(data);
@@ -180,7 +180,7 @@ app.post("/orders", (req, res) => {
   });
 });
 app.put("/orders/:id", (req, res) => {
-  const filePath = path.join(__dirname, "../db.json");
+  const filePath = path.join(__dirname, "db.json");
 
   fs.readFile(filePath, "utf8", (err, data) => {
     if (err) {
@@ -209,7 +209,7 @@ app.put("/orders/:id", (req, res) => {
   });
 });
 app.get("/restaurantsdata", (req, res) => {
-  const filePath = path.join(__dirname, "../db.json");
+  const filePath = path.join(__dirname, "db.json");
 
   fs.readFile(filePath, "utf8", (err, data) => {
     if (err) {
